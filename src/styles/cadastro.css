@@ -21,7 +21,7 @@ header > div > button{
     cursor: pointer;
 }
 .botão-distaque{
-    margin-right: 10px;
+    margin-left: 10px;
     background-color: var(--grey2);
     padding: 5px;
     border-radius: 6px;
@@ -42,12 +42,29 @@ form{
     align-items: center;
     margin-bottom: 30px;
 }
+form > div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 form h2{
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     margin:30px 15px;
-    margin-right: 50%;
+}
+.btn-volta{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--grey1);
+    border: 1px solid #212529;
+    padding: 8px 12px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    margin-right: 15px;
 }
 form input{
     width: 60%;
@@ -56,7 +73,7 @@ form input{
     border: 2px solid #DEE2E6;
     border-radius: 4px;
 }
-.btn-logar{
+.btn-register{
     background-color: var(--brand1);
     font-weight: 600;
     font-size: 14px;
@@ -75,7 +92,7 @@ form span{
     line-height: 16px;
     margin: 15px;
 }
-.btn-registro{
+.btn-volta-login{
     font-weight: 600;
     font-size: 12px;
     line-height: 17px;
@@ -86,63 +103,4 @@ form span{
     background-color: transparent;
     cursor: pointer;
     margin-bottom: 30px;
-}
-
-/* -------Modal------- */
-
-.modal-wrapper{
-    height: 100%;
-    width: 100%;
-    background-color: var(--grey-opacity-1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-.modal{
-    background-color: var(--brand1);
-    width: 80%;
-    border-radius: 4px;
-}
-.modal-header{
-    display: flex;
-    padding: 16px 20px;
-}
-.modal-header h3{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    color: var(--whithFixed);
-}
-.modal-body{
-    padding: 0px 18px;
-    margin-bottom: 18px;
-}
-.modal-body p{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    color: var(--whithFixed);
-}
-.modal-btn{
-    display: flex;
-    justify-content: end;
-    margin: 10px;
-}
-.modal-close{
-    padding: 7px;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    cursor: pointer;
-}
-.show-modal{
-    display: flex;
-}
-
-@media (min-width:768px){
-
 }
