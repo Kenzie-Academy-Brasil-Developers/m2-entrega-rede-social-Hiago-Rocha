@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Rede Social</title>
 </head>
 <body>
@@ -18,7 +21,7 @@
                 <p>Essa conta não existe, logo não pode acessar a página dos posts</p>
             </div>
             <div class="modal-btn">
-                <button class="modal-close"></button>
+                <button class="modal-close">Entendi</button>
             </div>
         </div>
     </div>
@@ -27,18 +30,18 @@
             <h1>TechPosters</h1>
         </div>
         <div>
-            <button>Login</button>
+            <button class="botão-distaque">Login</button>
             <button>Registro</button>
         </div>
     </header>
     <main>
         <form>
-            <h2>login</h2>
-            <input type="email" value="" name="email" placeholder="Email" required>
-            <input type="password" value="" name="senha" placeholder="Senha" required>
-            <button>Logar</button>
+            <h2>Login</h2>
+            <input type="email" value="" name="email" placeholder="Seu e-mail" id="email">
+            <input type="password" value="" name="senha" placeholder="Sua senha" id="senha">
+            <button class="btn-logar">Logar</button>
             <span>Ainda não possui cadastro</span>
-            <button>Ir para página de registro</button>
+            <button class="btn-registro">Ir para página de registro</button>
         </form>
     </main>
 </body>
