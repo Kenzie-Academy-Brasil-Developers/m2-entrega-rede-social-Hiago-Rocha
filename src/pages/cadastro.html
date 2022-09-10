@@ -17,7 +17,7 @@
             <h1>TechPosters</h1>
         </div>
         <div>
-            <button>Login</button>
+            <button id="btn-login">Login</button>
             <button class="botão-distaque">Registro</button>
         </div>
     </header>
@@ -27,15 +27,17 @@
                 <h2>Cadastro</h2>
                 <button class="btn-volta">Voltar</button>
             </div>
-            <input type="text" value="" placeholder="Seu nome">
-            <input type="email" value="" placeholder="Seu e-mail">
-            <input type="password" value="" placeholder="Sua senha">
-            <input type="text" value="" placeholder="Qual o seu trabalho?">
-            <input type="text" value="" placeholder="URL da imagem de perfil">
-            <button class="btn-register">Registar</button>
+            <input type="text" value="" placeholder="Seu nome" id="nome">
+            <input type="email" value="" placeholder="Seu e-mail" id="email">
+            <input type="password" value="" placeholder="Sua senha" id="password">
+            <input type="text" value="" placeholder="Qual o seu trabalho?" id="trabalho">
+            <input type="text" value="" placeholder="URL da imagem de perfil" id="imgPerfil">
+            <button class="btn-register">Registrar</button>
             <span>Já possui login?</span>
             <button class="btn-volta-login">Ir para página de login</button>
         </form>
     </main>
+    <script type="module" src="../scripts/models/api.js"></script>
+    <script type="module" src="../scripts/cadastro.js"></script>
 </body>
 </html>

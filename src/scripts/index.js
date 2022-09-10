@@ -8,7 +8,7 @@ btnEntendi.addEventListener("click", (event) => {
 
 class LoginPage {
     static renderLoginPage(){
-        const token = localStorage.getItem("@kenzieStore:token")
+        const token = localStorage.getItem("@kenzieRedeSocial:token")
 
         if(token){
             window.location.assign("src/pages/home.html")
@@ -27,7 +27,6 @@ class LoginPage {
             }
 
             ApiRequests.login(data)
-            window.location.assign("src/pages/home.html")
         })
     }
     static handleSignup() {
@@ -35,7 +34,19 @@ class LoginPage {
 
         handleSignupBtn.addEventListener("click", (event) => {
             event.preventDefault()
-            window.location.assign("src/pages/cadastro.html")
+            window.location.assign("./src/pages/cadastro.html")
+        })
+
+        const btnRegistrar = document.getElementById("btn-registrar")
+
+        btnRegistrar.addEventListener("click", () => {
+            window.location.assign("./src/pages/cadastro.html")
+        })
+
+        const botãoDistaque = document.querySelector(".botão-distaque")
+
+        botãoDistaque.addEventListener("click", () => {
+            window.location.assign("./index.html")
         })
     }
 }
