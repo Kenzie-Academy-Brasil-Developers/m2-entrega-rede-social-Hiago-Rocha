@@ -145,4 +145,33 @@ form span{
 
 @media (min-width:768px){
 
+    header > div{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    form{
+        width: 50%;
+    }
+    .btn-logar{
+        width: 71%;
+    }
+    .btn-registro{
+        width: 71%;
+    }
+}
+
+@media (min-width:1024px){
+    header > div{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    form{
+        width: 30%;
+    }
+    .btn-logar{
+        width: 71%;
+    }
+    .btn-registro{
+        width: 71%;
+    }
 }
