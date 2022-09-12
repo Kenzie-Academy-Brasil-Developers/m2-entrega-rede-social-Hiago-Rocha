@@ -65,6 +65,28 @@ class Home {
             })
         }
     }
+
+    static sugestaoSeguir(usuarios){
+        const NewArrUsers = []
+        console.log(usuarios)
+        if(usuarios <= 3){
+            NewArrUsers = usuarios
+        }else{
+            while(NewArrUsers.length < 3){
+           
+                let min = Math.ceil(0);
+                let max = Math.floor(usuarios.length);
+                
+                let resut = Math.floor(Math.random() * (max - min) + min);
+                if(!NewArrUsers.includes(usuarios[resut])){
+                    NewArrUsers.push(usuarios[resut])
+                }
+            }
+        }
+       Render.rederizaSugestao(NewArrUsers)
+       console.log(NewArrUsers)
+        return NewArrUsers
+    }
 }
 
 const btnSair = document.getElementById("btnSair")
@@ -91,3 +113,5 @@ Home.darLike()
 
 Home.abrirModal(posters)
 
+const usuarios = await ApiRequests.PegaUsers()
+Home.sugestaoSeguir(usuarios.results)

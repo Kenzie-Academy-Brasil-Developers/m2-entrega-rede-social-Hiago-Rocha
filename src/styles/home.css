@@ -20,8 +20,6 @@ nav > button{
     color: var(--grey4);
     cursor: pointer;
 }
-.container-big{
-}
 main{
     display: flex;
     flex-direction: column;
@@ -122,6 +120,7 @@ main{
 .card > img{
     width: 52px;
     height: 52px;
+    border-radius: 50px;
 }
 .perfil-seguir{
     width: 150px;
@@ -378,6 +377,13 @@ article > section > div > p{
     .containerPost{
         margin-left: 60px;
         max-width: 60%;
+    }
+
+    .modal{
+        width: 50%;
+    }
+    .modal > button{
+        margin-left: 97%;
     }
 
 }
