@@ -90,4 +90,47 @@ export class Render {
         const modal = document.querySelector(".modal-wrapper")
         modal.classList.toggle("show-modal")
     }
+
+    static rederizaSugestao(NewArrUsers){
+        const Roll = document.querySelector(".roll")
+        NewArrUsers.forEach((sugestao) => {
+            const card = Render.criaCard(sugestao)
+
+            Roll.appendChild(card)
+        })
+    }
+
+    static criaCard(sugestao){
+        const divCard   = document.createElement("div")
+        const imgCard   = document.createElement("img")
+        const divPerfil = document.createElement("div")
+        const h4Nome    = document.createElement("h4")
+        const pTrabalho = document.createElement("p")
+        const btn1      = document.createElement("button")
+        const btn2      = document.createElement("button")
+
+        divCard.classList.add("card")
+        divPerfil.classList.add("perfil-seguir")
+        imgCard.src = sugestao.image
+        imgCard.alt = `imagem de perfil de ${sugestao.username}`
+        h4Nome.innerText = sugestao.username
+        pTrabalho.innerText = sugestao.work_at
+        btn1.innerText = "Seguir"
+        btn2.innerText = "Seguir"
+
+        divCard.append(imgCard, divPerfil, btn2)
+        divPerfil.append(h4Nome, pTrabalho, btn1)
+
+        return divCard
+    }
 }
+
+/*<div class="card">
+                    <img id="img-sugestao" src="" alt="">
+                    <div class="perfil-seguir">
+                        <h4 id="nomeSugest">Carlos Lima</h4>
+                        <p>UX e UI Desginer</p>
+                        <button>Seguindo</button>
+                    </div>
+                    <button>Seguindo</button>
+                </div>*/

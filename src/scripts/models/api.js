@@ -101,4 +101,18 @@ export class ApiRequests {
 
         return newLike
     }
+
+    static async PegaUsers(){
+        const usuarios = await fetch(`${this.baseUrl}users/`,{
+            method: "GET",
+            headers: this.headers
+        })
+        .then(res => res.json())
+
+        .catch(err => console.log(err))
+
+        return usuarios
+    }
+
+    
 }
