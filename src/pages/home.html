@@ -12,98 +12,85 @@
     <title>Home</title>
 </head>
 <body>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <button id="btn-fecha-modal">X</button>
+                <div class="perfil-modal">
+                    <img id="img-perfil-post" src="../assets/Ellipse 1.png" alt="">
+                    <div>
+                        <h2 id="nome-perfil-post">Calos</h3>
+                        <p id="work-perfil-post">Front End</p>
+                    </div>
+                </div>
+            <div class="modal-body">
+                <h2 id="titulo-modal-post">Titulo</h2>
+            </div>
+            <div class="modal-btn">
+                <p id="conteudo-modal-post">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis voluptatem inventore nobis eveniet reprehenderit, vitae ipsam fugiat alias expedita voluptate enim maxime. Sequi, quisquam. Nulla maiores est ea fugit.</p>
+            </div>
+        </div>
+    </div>
     <nav>
         <h1>TechPosters</h1>
-        <button>Sair</button>
+        <button id="btnSair">Sair</button>
     </nav>
-    <main>
-        <header>
-            <div class="perfil">
-                <img src="../assets/Ellipse 1.png" alt="Imagem de Perfil">
-                <div>
-                    <h2>Samuel Leão<span>565 seguidores</span></h3>
-                    <p>Front end Engineer</p>
+    <div class="container-big">
+        <main>
+            <header>
+                <div class="perfil">
+                    <img id="img-perfil" src="" alt="">
+                    <div>
+                        <h2 id="nome-perfil"><span id="follow-perfil"></span></h3>
+                        <p id="work-perfil"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="bloco-post">
-                <input id="post-titulo" type="text" placeholder="Digitar título do post">
-                <textarea name="conteudoPost" id="post-conteudo" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
-                <button>Postar</button>
-            </div>
-        </header>
-        <h3>Sugestões para você seguir</h3>
-    </main>
-        <aside class="roll">
-            <div class="card">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div class="perfil-seguir">
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
+                <div class="bloco-post">
+                    <input id="post-titulo" type="text" placeholder="Digitar título do post">
+                    <textarea name="conteudoPost" id="post-conteudo" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+                    <button id="btn-Postar">Postar</button>
+                </div>
+            </header>
+        </main>
+            <h3 id="mobile">Sugestões para você seguir</h3>
+            <aside class="roll">
+                <h3 id="desk">Sugestões para você seguir</h3>
+                <div class="card">
+                    <img src="../assets/Ellipse 1.png" alt="">
+                    <div class="perfil-seguir">
+                        <h4>Carlos Lima</h4>
+                        <p>UX e UI Desginer</p>
+                        <button>Seguindo</button>
+                    </div>
                     <button>Seguindo</button>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div class="perfil-seguir">
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
+                <div class="card">
+                    <img src="../assets/Ellipse 1.png" alt="">
+                    <div class="perfil-seguir">
+                        <h4>Carlos Lima</h4>
+                        <p>UX e UI Desginer</p>
+                        <button>Seguindo</button>
+                    </div>
                     <button>Seguindo</button>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div class="perfil-seguir">
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
+                <div class="card">
+                    <img src="../assets/Ellipse 1.png" alt="">
+                    <div class="perfil-seguir">
+                        <h4>Carlos Lima</h4>
+                        <p>UX e UI Desginer</p>
+                        <button>Seguindo</button>
+                    </div>
                     <button>Seguindo</button>
                 </div>
-            </div>
-        </aside>
+            </aside>
+    </div>
     <article>
         <h2>Posts</h2>
-        <section>
-            <div class="perfil-do-post">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div>
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
-                </div>
-            </div>
-            <h3>Como criar um interface simples e agradável utilizando boas práticas de design</h3>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <div class="botoes-like-post">
-                <button class="btn-abrir-post">Abrir Post</button>
-                <img src="../assets/heartBlack.png" alt=""><span>25</span>
-            </div>
-
-            <div class="perfil-do-post">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div>
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
-                </div>
-            </div>
-            <h3>Como criar um interface simples e agradável utilizando boas práticas de design</h3>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <div class="botoes-like-post">
-                <button class="btn-abrir-post">Abrir Post</button>
-                <img class="btn-likes" src="../assets/heartBlack.png" alt=""><span>25</span>
-            </div>
-
-            <div class="perfil-do-post">
-                <img src="../assets/Ellipse 1.png" alt="">
-                <div>
-                    <h4>Carlos Lima</h4>
-                    <p>UX e UI Desginer</p>
-                </div>
-            </div>
-            <h3>Como criar um interface simples e agradável utilizando boas práticas de design</h3>
-            <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
-            <div class="botoes-like-post">
-                <button class="btn-abrir-post">Abrir Post</button>
-                <img src="../assets/heartBlack.png" alt=""><span>25</span>
-            </div>
+        <section id="sessao-posters">
+            
         </section>
     </article>
+    <script type="module" src="../scripts/models/api.js"></script>
+    <script type="module" src="../scripts/models/render.js"></script>
+    <script type="module" src="../scripts/home.js"></script>
 </body>
 </html>

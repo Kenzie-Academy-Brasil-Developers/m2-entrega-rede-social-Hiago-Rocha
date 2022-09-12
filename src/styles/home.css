@@ -20,6 +20,8 @@ nav > button{
     color: var(--grey4);
     cursor: pointer;
 }
+.container-big{
+}
 main{
     display: flex;
     flex-direction: column;
@@ -31,6 +33,7 @@ main{
 .perfil > img{
     width: 52px;
     height: 52px;
+    border-radius: 50px;
 }
 .perfil > div{
     display: flex;
@@ -87,12 +90,19 @@ main{
     margin-left: 75%;
     margin-bottom: 20px;
 }
-body > main > h3{
+#mobile{
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     color: var(--grey1);
     margin-left: 18px;
+}
+#desk{
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--grey1);
 }
 .roll{
     margin-left: 18px;
@@ -141,6 +151,19 @@ body > main > h3{
     cursor: pointer;
     border-radius: 5px;
 }
+.card > button{
+    display: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 74px;
+    height: 24px;
+    background-color: var(--brand1);
+    color: var(--whithFixed);
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 article{
     margin-left: 18px;
     max-width: 100%;
@@ -161,6 +184,11 @@ article > h2{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.perfil-do-post > img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+}
 .perfil-do-post > div > h4{
     font-weight: 600;
     font-size: 18px;
@@ -174,7 +202,7 @@ article > h2{
     line-height: 16px;
     color: var(--grey2);
 }
-article > section > h3{
+article > section > div > h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -182,7 +210,7 @@ article > section > h3{
     margin-bottom: 20px;
     margin-right: 5px;
 }
-article > section > p{
+article > section > div > p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -196,11 +224,160 @@ article > section > p{
     gap: 5px;
 }
 .btn-abrir-post{
-    width: 92px;
-    height: 38px;
+    width: 82px;
+    height: 24px;
     background-color: var(--grey1);
     color: var(--whithFixed);
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
+    padding: 5px;
+    font-size: 13px;
+}
+.botoes-like-post > img{
+    cursor: pointer;
+}
+
+/* ------Modal-------*/
+
+.modal-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey-opacity-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: baseline;
+    justify-content: center;
+}
+.modal{
+    margin-top: 20px;
+    background-color: var(--whithFixed);
+    width: 80%;
+    border-radius: 4px;
+}
+.modal > button{
+    margin: 3px;
+    margin-left: 94%;
+    color: var(--grey3);
+    background-color: transparent;
+}
+.perfil-modal{
+    display: flex;
+}
+.perfil-modal > img{
+    margin-left: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+.perfil-modal > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.perfil-modal > div > h2{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--grey1);
+}
+.perfil-modal > div > p{
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.modal-body{
+    padding: 0px 18px;
+    margin-bottom: 18px;
+}
+.modal-body h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--grey1);
+}
+.modal-btn{
+    display: flex;
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+.modal-btn > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 5px;
+    color: var(--grey1);
+}
+.show-modal{
+    display: flex;
+}
+
+@media (min-width:1024px){
+    nav > h1{
+        margin-left: 60px;
+    }
+    nav > button{
+        margin-right: 60px;
+    }
+    main{
+        width: 40%;
+    }
+    header{
+        margin-left: 60px;
+    }       
+    #post-titulo{
+        width: 170%;
+    }
+    #post-conteudo{
+        width: 170%;
+    }
+    .bloco-post > button{
+        margin-left: 162%;
+        width: 80px;
+    }
+    article > h2{
+        margin-left: 60px;
+    }
+    .container-big{
+        display: flex;
+    }
+    .roll{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        overflow-x: none;
+        overflow: hidden;
+        width: 40%;
+        margin-left: 400px;
+        margin-right: 90px;
+    }
+    .card{
+        display: flex;
+        gap: 15px;
+        margin-right: 25px;
+    }
+    #mobile{
+        display: none;
+    }
+    #desk{
+        display: block;
+        margin-right: 80px;
+    }
+    .perfil-seguir > button{
+        display: none;
+    }
+    .card > button{
+        display: block;
+    }
+    .containerPost{
+        margin-left: 60px;
+        max-width: 60%;
+    }
+
 }
